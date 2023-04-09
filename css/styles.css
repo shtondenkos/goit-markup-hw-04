@@ -549,15 +549,7 @@ img {
     gap: 10px;
 
 }
-.list-item-logo {
-    display: flex;
-    width: 170px;
-    height: 72px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
+
 .sprite-item-logo {
     width: 106px;
     height: 60px;
@@ -588,9 +580,11 @@ img {
         align-items: baseline;
         gap: 70px;
     }
-    .clients-hover:hover .sprite-item-logo {
+    .clients-hover:hover
+    .sprite-item-logo {
         cursor: pointer;
-        fill: #2196F3;   
+        fill: #2196F3; 
+       
 
     }
     .clients-hover {
@@ -608,7 +602,9 @@ img {
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        
     
+    }
+    .clients-item:hover {
+        border: 1px solid #2196F3;
     }
 
