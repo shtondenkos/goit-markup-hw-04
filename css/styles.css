@@ -492,7 +492,7 @@ img {
         width: 16px;
         height: 12px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 10px;
 }
 .sprite-item-smartphone {
         width: 10px;
