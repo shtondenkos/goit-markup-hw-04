@@ -98,7 +98,7 @@ p {
     text-align: center;
     color: var(--color-withlight);
     background-color: var(--color-footer-background);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)),(rgba(47, 48, 58, 0.4)),url(../images/Header\ Img\ copy.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../images/Header\ Img\ copy.jpg);
 }
 
 .header-box {
@@ -596,12 +596,17 @@ img {
     gap: 70px;
     }
 
-    .clients-hover:hover 
+    .clients-hover:hover, 
+    .sprite-item-logo:hover {
+        cursor: pointer;
+        fill: #2196F3;
+        border-color: #2196F3;
+    }
     .clients-hover:focus {
         cursor: pointer;
         fill: #2196F3;
-        border: 1px solid #2196F3;
-    }
+        border-color: #2196F3;
+        }
 
     .clients-hover {
         width: 170px;
@@ -614,7 +619,7 @@ img {
     
     }
 
-    .clients-item {
+    /*.clients-item {
         width: 100%;
         height: 100%;
         border-radius: 4px;
