@@ -539,18 +539,36 @@ img {
     border-radius: 50%;
    
 }
-.link-sprite:hover {
-    background-color: #2196F3;
+.thumb-sprite:hover {
+    background-color: var(--color-buttons-hover);
+
+}
+.item-teamcard {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-withlight);
+}
+
+.link-sprite {
+    background-color: (var(--color-withlight));
     border-radius: 50%;
     max-width: 100%;
    
 }
+.link-sprite:hover {
+    background-color: #2196F3;
+    
+}
+.link-sprite:hover .sprite-item-teamcard {
+    fill: var(--color-withlight);
+}
+
 .thumb-sociable {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    padding-left: 0;
+    padding: 0 32px 0 32px;
     gap: 10px;
 
 }
@@ -596,22 +614,24 @@ img {
     gap: 70px;
     }
 
-    .clients-hover:hover, .sprite-item-logo,
-    .clients-hover:focus  {
-    cursor: pointer;
-    fill: #2196F3;
+    .clients-hover:hover,
+    .clients-hover:focus {
     border-color: #2196F3;
     }
    
+     .clients-hover:hover .sprite-item-logo {
+    fill: #2196F3;
+    }
+
     .clients-hover {
-        width: 170px;
-        height: 92px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-    
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
     }
 
 
