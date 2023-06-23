@@ -74,6 +74,7 @@ p {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    font-style: normal;
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -91,6 +92,7 @@ p {
 .hero {
     font-size: 44px;
     max-width: 1600px;
+    margin: auto;
     line-height: 1.36;
     letter-spacing: 0.06em;
     padding-top: 200px;
@@ -207,7 +209,7 @@ p {
     text-align: center;
     background-color: var(--color-buttons-background);
     border-radius: 4px;
-    border-width: none;
+    cursor: pointer;
     justify-content: center;
     box-shadow: none;
 
@@ -217,10 +219,7 @@ p {
 .btn:focus {
     background-color: #2196F3;
     color: #FFFFFF;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-    border-radius: 4px;
-    transform: rotate(360deg);
+    
 }
 
 .hero-btn {
@@ -233,7 +232,6 @@ p {
     border: none;
     border-radius: 4px;
     color: #FFFFFF;
-    transition: transform 500ms linear;
 }
 
 .button {
@@ -254,12 +252,24 @@ p {
 
 }
 
-.feature li,
-.atitle {
+.feature li {
     width: 270px;
     padding-left: 0;
     text-decoration: none;
 }
+
+.atitle {
+    display: block;
+    width: 270px;
+    padding-left: 0;
+    text-decoration: none;
+}
+.atitle:hover,
+.atitle:focus {
+    box-shadow: 1px 4px 6px 0px #00000029,
+                0px 4px 4px 0px #0000000F,
+                0px 1px 1px 0px #0000001F;
+    }
 
 
 .list-item {
@@ -524,11 +534,12 @@ img {
     height: 20px;
     fill:#AFB1B8;
 }
-.sprite-item-teamcard:hover {
+/*.sprite-item-teamcard:hover, 
+.sprite-item-teamcard:focus {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
-}
+}*/
 
 .thumb-sprite {
     display: flex;
@@ -541,10 +552,22 @@ img {
     border-radius: 50%;
    
 }
-.thumb-sprite:hover {
+.thumb-sprite:hover,
+.thumb-sprite:focus {
     background-color: var(--color-buttons-hover);
 
 }
+.thumb-sprite:hover,
+.sprite-item-teamcard {
+    fill:#FFFFFF;
+}
+
+.thumb-sprite:focus {
+    fill: #FFFFFF;
+}
+
+
+
 .item-teamcard {
     width: 20px;
     height: 20px;
@@ -557,10 +580,11 @@ img {
     max-width: 100%;
    
 }
-.link-sprite:hover {
+.link-sprite:hover
+.link-sprite:focus {
     background-color: #2196F3;
-    
-}
+    }
+
 .link-sprite:hover .sprite-item-teamcard {
     fill: var(--color-withlight);
 }
@@ -570,7 +594,7 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    padding: 0 32px 0 32px;
+    padding: 0;
     gap: 10px;
 
 }
@@ -621,8 +645,12 @@ img {
     border-color: #2196F3;
     }
    
-     .clients-hover:hover .sprite-item-logo {
+     .clients-hover:hover
+     .sprite-item-logo {
     fill: #2196F3;
+    }
+    .clients-hover:focus {
+    fill: #2196F3; 
     }
 
     .clients-hover {
