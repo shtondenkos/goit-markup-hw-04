@@ -534,6 +534,13 @@ img {
     height: 20px;
     fill:#AFB1B8;
 }
+
+.sprite-item-teamcard-pf {
+    width: 20px;
+    height: 20px;
+    fill:#FFFFFF;
+}
+
 .sprite-item-teamcard:hover, 
 .sprite-item-teamcard:focus {
     width: 20px;
@@ -595,6 +602,19 @@ img {
     gap: 10px;
 
 }
+
+.thumb-sociable-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 0;
+    gap: 10px;
+}
+
+
+
+
 .link-sprite {
     display: flex;
     align-items: center;
