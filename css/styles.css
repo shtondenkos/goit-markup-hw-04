@@ -534,12 +534,12 @@ img {
     height: 20px;
     fill:#AFB1B8;
 }
-/*.sprite-item-teamcard:hover, 
+.sprite-item-teamcard:hover, 
 .sprite-item-teamcard:focus {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
-}*/
+}
 
 .thumb-sprite {
     display: flex;
@@ -556,10 +556,6 @@ img {
 .thumb-sprite:focus {
     background-color: var(--color-buttons-hover);
 
-}
-.thumb-sprite:hover,
-.sprite-item-teamcard {
-    fill:#FFFFFF;
 }
 
 .thumb-sprite:focus {
@@ -594,7 +590,8 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     gap: 10px;
 
 }
