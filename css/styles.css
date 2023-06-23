@@ -260,7 +260,6 @@ p {
 
 .atitle {
     display: block;
-    width: 270px;
     padding-left: 0;
     text-decoration: none;
 }
@@ -472,7 +471,7 @@ p {
     margin-top: calc(-1 * var(--card-set-gap));
 }
 .card-set > .item {
-    flex-basis: calc(100%/3-var(--card-set-gap));
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     margin-top: var(--card-set-gap);
 }
