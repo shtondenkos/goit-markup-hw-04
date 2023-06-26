@@ -211,15 +211,17 @@ p {
     border-radius: 4px;
     cursor: pointer;
     justify-content: center;
-    box-shadow: none;
-
+    border-bottom: none;
+    border-right: none;
 }
 
 .btn:hover,
 .btn:focus {
     background-color: #2196F3;
     color: #FFFFFF;
-    
+    box-shadow: 0px 2px 2px 0px #0000001F,
+            0px 1px 2px 0px #00000014,
+            0px 3px 1px 0px #0000001A;   
 }
 
 .hero-btn {
@@ -558,23 +560,15 @@ img {
     border-radius: 50%;
    
 }
-.thumb-sprite:hover,
-.thumb-sprite:focus {
-    background-color: var(--color-buttons-hover);
-
+.thumb-sprite:hover {
+    background-color: #2196F3;
 }
-
-.thumb-sprite:focus {
-    fill: #FFFFFF;
-}
-
-
-
 .item-teamcard {
     width: 20px;
     height: 20px;
     fill: var(--color-withlight);
 }
+
 
 .link-sprite {
     background-color: (var(--color-withlight));
@@ -582,10 +576,13 @@ img {
     max-width: 100%;
    
 }
-.link-sprite:hover
+.link-sprite:hover,
 .link-sprite:focus {
     background-color: #2196F3;
     }
+.link-sprite:focus {
+     fill: #FFFFFF;
+}     
 
 .link-sprite:hover .sprite-item-teamcard {
     fill: var(--color-withlight);
@@ -653,7 +650,6 @@ img {
     .foot > .conteiner {
     display: flex;
     align-items: baseline;
-    gap: 70px;
     }
 
     .clients-hover:hover,
@@ -665,7 +661,8 @@ img {
      .sprite-item-logo {
     fill: #2196F3;
     }
-    .clients-hover:focus {
+    .clients-hover:focus
+    .sprite-item-logo {
     fill: #2196F3; 
     }
 
@@ -680,5 +677,7 @@ img {
     border-radius: 4px;
     }
 
-
+.gap {
+    margin-right: 70px;
+}
   
