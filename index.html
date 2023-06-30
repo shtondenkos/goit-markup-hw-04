@@ -52,7 +52,7 @@
       <section class="hero">
         <div class="conteiner">
         <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="main-subject">
@@ -343,27 +343,45 @@
       <h3 class="sociable-title">приєднуйтесь</h3>
         <ul class="thumb-sociable-foot">
             <li class="thumb-sprite">
+              <a href="" class="link-sprite">
               <svg class="item-teamcard">
               <use href="./images/symbol-defs.svg#icon-instagram"></use>
-            </svg>
+              </svg>
+              </a>
           </li>
             <li class="thumb-sprite">
+              <a href="" class="link-sprite">
               <svg class="item-teamcard">
               <use href="./images/symbol-defs.svg#icon-twitter"></use>
-            </svg>
+              </svg>
+              </a>
           </li>
             <li class="thumb-sprite">
+              <a href="" class="link-sprite">
               <svg class="item-teamcard">
               <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
+              </svg>
+              </a>
           </li>
             <li class="thumb-sprite">
+              <a href="" class="link-sprite">
               <svg class="item-teamcard">
               <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-            </svg>
+              </svg>
+              </a>
           </li>
         </ul>
       </div>
     </footer>
-  </body>
+     <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button  class="modal-close" type="button" data-modal-close> 
+                <svg class="modal-icon" width="8px" height="8px">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+     </div>
+    </div>
+<script src="./js/modal.js"></script>
+</body>
 </html>

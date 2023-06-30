@@ -35,6 +35,7 @@ p {
 }
 
 .link {
+    position: relative;
     display: block;
     text-decoration: none;
     font-weight: 500;
@@ -144,6 +145,8 @@ p {
 
 .mail,
 .tel {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.21;
@@ -212,7 +215,9 @@ p {
     cursor: pointer;
     justify-content: center;
     border-bottom: none;
+    border-top: none;
     border-right: none;
+    border-left: none;
 }
 
 .btn:hover,
@@ -587,14 +592,17 @@ img {
 .link-sprite:hover .sprite-item-teamcard {
     fill: var(--color-withlight);
 }
+.link-sprite:focus .sprite-item-teamcard {
+    fill: var(--color-withlight);
+}
 
 .thumb-sociable {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
     gap: 10px;
 
 }
